@@ -1,8 +1,15 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Greyhound Race Analyzer", layout="wide")
-st.title("🐾 Greyhound Race Analyzer")
+st.set_page_config(
+    page_title="The Regulr - Greyhound Analyzer",
+    page_icon="🐾",
+    layout="wide"
+)
+
+st.image("regulr_logo.png", width=200)
+st.markdown("## 🏁 The Regulr: Greyhound Race Analyzer")
+st.markdown("---")
 
 uploaded_file = st.file_uploader("📤 Upload your race form Excel (.xlsx)", type=["xlsx"])
 
